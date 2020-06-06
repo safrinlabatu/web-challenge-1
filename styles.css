@@ -1,0 +1,305 @@
+body {
+    margin: 0;
+    padding: 0;
+    width: 100%;
+    height: 100vh;
+    font-family: "Barlow Condensed", sans-serif;
+}
+.header {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr 1fr;
+    grid-template-rows: 1fr;
+    height: 140px;
+} 
+.header img {
+    grid-column-start: 1;
+    grid-column-end: 4;
+    grid-row-start: 1;
+    padding-top: 3rem;
+    padding-left: 14rem;
+}
+.header ul {
+    grid-column-start: 13;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    padding-top: 2.5rem;
+    padding-right: 10px;
+}
+.header li {
+    text-decoration: none;
+    display: inline;
+    font-size: 13px;
+    font-weight: bold;
+    letter-spacing: 0.050rem;
+    margin-left: 35px;
+}
+.nav-link {
+    text-decoration: none;
+    color: #242942;
+}
+.nav-link:hover {
+    color: blue;
+}
+.circle {
+    color: grey;  
+}
+.header i {
+    font-size: 5px;
+}
+.login {
+    color: grey;
+    font-size: 12px;
+    text-decoration: none;
+}
+.login:hover {
+    color: blue;
+}
+
+.header div {
+    height: 300px;
+    grid-column-start: 12;
+    grid-column-end: 21;
+    grid-row-start: 1;
+    background-color: #EDF2F6;
+    z-index: -1;
+    border-bottom-left-radius: 40px;
+}  
+.container {
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: 1fr;
+}
+.left {
+    padding-left: 14rem;
+    padding-top: 30px;
+}
+.left h2, p {
+    margin: 0;
+}
+.small-text {
+    display: flex;
+    flex-direction: row;
+}
+.new {
+    background-color: #242942;
+    color: white;
+    vertical-align: center;
+    font-size: 13px;
+    padding: 2px;
+    border-radius: 25px;
+    letter-spacing: 1px;
+}
+.monograph {
+    font-size: 13px;
+    color: grey;
+    padding-left: 12px;
+    padding-top: 3px;
+    letter-spacing: 3px;
+}
+.big-text {
+    /* background-color: red; */
+}
+.big-text h2 {
+    font-size: 60px;
+    color: #242942;
+}
+.project {
+    margin-top: 20px;
+    color: grey;
+    letter-spacing: 1px;
+}
+.btn {
+    display: flex;
+    flex-direction: row;
+    padding-top: 50px;
+}
+.btn button {
+background-color: red;
+border: 1px red;
+padding: 12px;
+border-radius: 3px;
+color: white;
+}
+.btn p {
+    padding-left: 10px;
+    padding-top: 10px;
+    letter-spacing: 2px;
+    color: grey;
+}
+
+.right {
+    grid-column-start: 2 /span 4;
+    overflow: hidden;
+}
+.right img {
+    width: 815px;
+    padding-left: 97px;
+}
+.footer {
+    padding-top: 50px;
+}
+.attribution { font-size: 11px; text-align: center; }
+.attribution a { color: hsl(228, 45%, 44%); }
+
+/* mobile */
+@media only screen and (max-width: 420px) {
+    .header {
+        display: grid;
+        grid-template-columns: 1fr 1fr;
+        grid-template-rows: 1fr;
+        height: 140px;
+        /* position: absolute; */
+    } 
+    .header img {
+        grid-column-start: 1;
+        grid-column-end: 2;
+        grid-row-start: 1;
+        padding-top: 30px;
+        padding-left: 10px;
+        width: 25px;
+    }
+    .header ul {
+        display: flex;
+        flex-direction: column;
+        grid-column-start: 1;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        padding-top: 10px;
+        /* padding-right: 10px; */
+    }
+    .header li {
+        text-decoration: none;
+        /* display: inline; */
+        font-size: 13px;
+        font-weight: bold;
+        letter-spacing: 0.050rem;
+        /* margin-left: 35px; */
+    }
+    .nav-link {
+        text-decoration: none;
+        color: #242942;
+    }
+    .nav-link:hover {
+        color: blue;
+    }
+    .circle {
+        color: grey;  
+    }
+    .header i {
+        font-size: 5px;
+    }
+    .login {
+        color: grey;
+        font-size: 12px;
+        text-decoration: none;
+    }
+    .login:hover {
+        color: blue;
+    }
+    
+    .header div {
+        height: 350px;
+        width: 300px;
+        grid-column-start: 2;
+        grid-column-end: 3;
+        grid-row-start: 1;
+        background-color: #EDF2F6;
+        z-index: -1;
+        border-bottom-left-radius: 40px;
+        margin: 0;
+        padding: 0;
+    }  
+    .container {
+        display: flex;
+        flex-direction: column-reverse;
+    }
+    .left {
+        padding-left: 10px;
+        padding-top: 50px;
+    }
+    .left h2, p {
+        margin: 0;
+    }
+    .small-text {
+        display: flex;
+        flex-direction: row;
+    }
+    .new {
+        background-color: #242942;
+        color: white;
+        vertical-align: center;
+        font-size: 13px;
+        padding: 2px;
+        border-radius: 25px;
+        letter-spacing: 1px;
+    }
+    .monograph {
+        font-size: 13px;
+        color: grey;
+        padding-left: 12px;
+        padding-top: 3px;
+        letter-spacing: 3px;
+    }
+    .big-text {
+        /* background-color: red; */
+    }
+    .big-text h2 {
+        font-size: 40px;
+        color: #242942;
+    }
+    .project {
+        margin-top: 20px;
+        color: grey;
+        letter-spacing: 1px;
+    }
+    .btn {
+        display: flex;
+        flex-direction: row;
+        padding-top: 30px;
+    }
+    .btn button {
+    width: 30%;
+    background-color: red;
+    border: 1px red;
+    padding: 9px;
+    border-radius: 3px;
+    color: white;
+    font-size: 10px;
+    }
+    .btn p {
+        padding-left: 10px;
+        padding-top: 10px;
+        letter-spacing: 2px;
+        color: grey;
+        font-size: 10px;
+    }
+    
+    .right {
+        /* grid-column-start: 2 /span 4; */
+        overflow: hidden;
+    }
+    .right img {
+        width: 350px;
+        padding-left: 10px;
+    }
+    .footer {
+        padding-top: 50px;
+        padding-right: 120px;
+    }
+    .attribution { font-size: 11px; text-align: center; }
+    .attribution a { color: hsl(228, 45%, 44%); }
+}
+
+@media only screen and (max-width: 361px) {
+   
+    .left {
+        padding-left: 5px;
+    }
+    .big-text h2 {
+        font-size: 30px;
+    }
+    .right img {
+        width: 300px;
+        padding-left: 5px;
+    }
+}
